@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApiComponent } from './api/api.component';
 
 const routes: Routes = [
-  {path:'api',component:ApiComponent}
+  {path:'api',component:ApiComponent},
+  {path:'**',component:ApiComponent}
 ];
 
 @NgModule({
