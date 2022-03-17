@@ -1,1 +1,55 @@
+<mat-sidenav-container>
+    <!--  <mat-sidenav #sidenav>
+        <mat-nav-list (click)="sidenav.close()">
+
+            <a mat-list-item routerLink="Home">
+                <mat-icon>Home</mat-icon>
+                <span>Home</span>
+            </a>
+            <a mat-list-item routerLink="telefonkonyv">
+                <mat-icon>Home</mat-icon>
+                <span>Telefonkonyv</span>
+            </a>
+            <a mat-list-item routerLink="feladat1">
+                <mat-icon>Home</mat-icon>
+                <span>Feladat 1</span>
+            </a>
+            <a mat-list-item routerLink="feladat2">
+                <mat-icon>Home</mat-icon>
+                <span>Feladat 2</span>
+            </a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+ -->
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="Home">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+          </button>
+        <button mat-menu-item routerLink="telefonkonyv">
+      <mat-icon>dialpad</mat-icon>
+      <span>Telefonkönyv</span>
+    </button>
+        <button mat-menu-item routerLink="feladat1">
+        <mat-icon>&#xE87C;</mat-icon>
+        <span>Feladat 1</span>
+      </button>
+        <button mat-menu-item routerLink="feladat2">
+        <mat-icon>build</mat-icon>
+        <span>Feladat 2</span>
+      </button>
+
+    </mat-menu>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+
+
+
 <router-outlet></router-outlet>
